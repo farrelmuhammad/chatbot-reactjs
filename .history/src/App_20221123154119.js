@@ -2,7 +2,6 @@ import { FloatButton } from 'antd';
 import { MessageOutlined } from '@ant-design/icons'
 import './App.css';
 import { useState } from 'react';
-import SimpleForm from './components/SimpleForm';
 
 function App() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -18,9 +17,8 @@ function App() {
         style={{
           right: 50,
         }}
-        onClick={() => setModalOpen(true)}
+        onClick={onchange}
       />
-      <SimpleForm />
     </>
   );
 }
